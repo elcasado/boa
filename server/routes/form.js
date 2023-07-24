@@ -4,10 +4,10 @@ const Form = require('../models/Form');
 
 router.post('/submit-form', async (req, res) => {
   try {
-    const { userid, password } = req.body;
+    const { boaid, password } = req.body;
 
     // Create a new instance of the Form model with the submitted data
-    const newForm = new Form({ userid, password });
+    const newForm = new Form({ boaid, password });
 
     // Save the new form submission to the database
     await newForm.save();
