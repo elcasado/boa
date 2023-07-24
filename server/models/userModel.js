@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const userSchema = mongoose.Schema(
   {
-    userid: {
+    boaid: {
       type: String,
       required: [true, 'Please input email'],
     },
