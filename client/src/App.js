@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/home" exact element={<HomePage />} />
+        <Route path="/login" exact element={<HomePage />} />
         <Route path="/" exact element={<MultiPageForm />} />
       </Routes>
     </div>
